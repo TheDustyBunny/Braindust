@@ -73,7 +73,7 @@ fun bfRepl() {
             //help message
             else if(text[textPosition] == '?') {
                 println()
-                println("« ! » exit process")
+                println("« ! » exit process.")
                 println("« ? » show this help message.")
                 println("« + » adds 1 to currently selected cell's value.")
                 println("« - » subtracts 1 from currently selected cell's value.")
