@@ -2,7 +2,7 @@ import kotlin.system.exitProcess
 
 fun bfRepl() {
 
-    println("Use command '?' for help.")
+    println("Use command «?» for help.")
 
     var memoryTape = arrayListOf(0)
     var memoryTapePosition = 0
@@ -73,17 +73,17 @@ fun bfRepl() {
             //help message
             else if(text[textPosition] == '?') {
                 println()
-                println("« ! » exit process.")
-                println("« ? » show this help message.")
-                println("« + » adds 1 to currently selected cell's value.")
-                println("« - » subtracts 1 from currently selected cell's value.")
-                println("« > » moves main pointer to next cell.")
-                println("« < » moves main pointer to the previous cell.")
-                println("« . » prints value of currently selected cell in ASCII format.")
-                println("« ' » prints value of currently selected cell in numerical format.")
-                println("« , » requests input.")
-                println("« [ » begins loop.")
-                println("« ] » ends loop.")
+                println("«!» exit process.")
+                println("«?» show this help message.")
+                println("«+» add 1 to currently selected cell's value.")
+                println("«-» subtract 1 from currently selected cell's value.")
+                println("«>» move main pointer to next cell.")
+                println("«<» move main pointer to previous cell.")
+                println("«.» print value of currently selected cell in UTF-16 format.")
+                println("«'» print value of currently selected cell in numerical format.")
+                println("«,» request input.")
+                println("«[» begin loop.")
+                println("«]» end loop.")
             }
 
             //start loop
