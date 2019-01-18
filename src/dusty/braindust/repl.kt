@@ -24,8 +24,8 @@ fun Braindust.repl() {
             when (text[textPos]) {
                 '>' -> { memoryPointer++ }
                 '<' -> { memoryPointer-- }
-                '+' -> { memoryTape[memoryPointer]++; }
-                '-' -> { memoryTape[memoryPointer]--; }
+                '+' -> { memoryTape[memoryPointer]++ }
+                '-' -> { memoryTape[memoryPointer]-- }
                 '.' -> { print(memoryTape[memoryPointer].toByte().toChar()) }
                 ',' -> { memoryTape[memoryPointer] = readLine().toString()[0].toShort().toUByte() }
                 '!' -> { exitProcess(memoryTape[memoryPointer].toInt()) }
@@ -36,7 +36,7 @@ fun Braindust.repl() {
                     println("«-» subtract 1 from currently selected cell's value.")
                     println("«>» move main pointer to next cell.")
                     println("«<» move main pointer to previous cell.")
-                    println("«.» print value of currently selected cell in UTF-16 format.")
+                    println("«.» print value of currently selected cell as a character.")
                     println("«,» request input.")
                     println("«[» begin loop.")
                     println("«]» end loop.") }
