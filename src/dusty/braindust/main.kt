@@ -3,6 +3,7 @@ package dusty.braindust
 import java.io.FileNotFoundException
 import java.io.FileReader
 
+@kotlin.ExperimentalUnsignedTypes
 fun main(args: Array<String>) {
     if(args.isNotEmpty()) {
         try {
